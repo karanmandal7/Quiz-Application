@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/style.css">
+        <title>Quizola</title>
+    </head>
+    <body>
+        
+        <div class="boxR" id="app">
+            <div class="titleR">
+                <h2>Quiz Result</h2>
+            </div>
+            <div class="resultBox">
+                <label>Questions : </label>
+                <span id="totalQuestion">10</span>
+                <label>Attempt : </label>
+                <span id="attemptQuestion">1</span>
+                <label>Correct : </label>
+                <span id="correctAnswer">
+                    4
+                </span>
+                <label>Wrong : </label>
+                <span id="wrongAnswer">5</span>
+            </div>
+            <form action="{% url 'home' %}" method="get">
+        <div class="footer">
+            <button class="again" >
+                <h3>Start Again</h3>
+            </button>
+        </div>
+        </div>
+        <!-- <script>
+            $(".countC").countC({
+            var count = sessionStorage.getItem("count");
+            var totalQuestion = document.getElementById("totalQuestion");
+            totalQuestion.innerHTML = count;})
+        </script> -->
+    </body>
+</html>
